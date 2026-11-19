@@ -93,3 +93,4 @@ function render(){grid.innerHTML='';let list=entries.filter(matches);list.slice(
 function setCat(c){active=c;document.querySelectorAll('.filters button').forEach(b=>b.classList.toggle('active',b.dataset.cat===c));shown=PER;render();document.querySelector('#gallery').scrollIntoView({behavior:'smooth'})}
 document.getElementById('filters').onclick=e=>{let b=e.target.closest('[data-cat]');if(b)setCat(b.dataset.cat)};document.getElementById('search').oninput=e=>{query=e.target.value;shown=PER;render()};more.onclick=()=>{shown+=PER;render()};document.getElementById('year').textContent=new Date().getFullYear();render();
 </script></body></html>
+<print> this Websit create  byy kris raj 
